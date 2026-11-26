@@ -55,7 +55,9 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden="true">
+        <div className="dot-shimmer absolute inset-0" />
+      </div>
 
       <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-24 md:pb-32 md:pt-32">
         <p className="reveal font-mono text-xs uppercase tracking-[0.18em] text-rose">
