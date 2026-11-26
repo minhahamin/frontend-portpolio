@@ -55,17 +55,7 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <svg
-        className="pointer-events-none absolute -right-24 -top-24 h-[520px] w-[520px] text-pink"
-        viewBox="0 0 520 520"
-        fill="none"
-        aria-hidden="true"
-      >
-        <circle cx="260" cy="260" r="250" fill="currentColor" opacity="0.28" />
-        <circle cx="260" cy="260" r="190" stroke="currentColor" strokeWidth="1" opacity="0.9" />
-        <circle cx="260" cy="260" r="130" stroke="currentColor" strokeWidth="1" opacity="0.9" />
-        <circle cx="260" cy="260" r="70" stroke="currentColor" strokeWidth="1" opacity="0.9" />
-      </svg>
+      <div className="dot-grid pointer-events-none absolute inset-0" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-5xl px-6 pb-24 pt-24 md:pb-32 md:pt-32">
         <p className="reveal font-mono text-xs uppercase tracking-[0.18em] text-rose">
@@ -79,8 +69,8 @@ function Hero() {
           프론트엔드 개발자 홍민하
         </h1>
         <p className="reveal mt-8 max-w-xl text-[17px] text-muted" style={{ ['--i' as string]: 2 }}>
-          상태 관리, 데이터 패칭, 렌더링 성능처럼 화면 뒤에서 일어나는 일을 다룹니다.
-          아래 세 프로젝트는 모두 배포되어 있고, 테스트와 README 까지 정리했습니다.
+          버벅이지 않는 화면, 새로고침해도 그대로인 화면, 오류가 나도 길을 알려 주는 화면을 만듭니다.
+          아래 세 프로젝트가 그 기록입니다.
         </p>
         <div className="reveal mt-10 flex flex-wrap items-center gap-6" style={{ ['--i' as string]: 3 }}>
           <a

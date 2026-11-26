@@ -66,6 +66,14 @@ body {
   }
 }
 
+/* 히어로 배경: 오른쪽 위에서 옅어지는 핑크 도트 패턴 */
+.dot-grid {
+  background-image: radial-gradient(#e8a2b8 1.6px, transparent 1.7px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 100% at 100% 0%, #000 15%, transparent 78%);
+  mask-image: radial-gradient(ellipse 80% 100% at 100% 0%, #000 15%, transparent 78%);
+}
+
 .link-line {
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0 1px;
